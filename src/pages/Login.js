@@ -23,7 +23,7 @@ class Login extends Component {
                     if (response.status === 200) {
                         localStorage.setItem('user', JSON.stringify(response.data.user));
                         const username = response.data.user.username
-                        window.location.replace(`/profile/${username}`)
+                        window.location.replace(`/profiles/${username}`)
                     }
                 }
             )
